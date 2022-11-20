@@ -1,0 +1,23 @@
+### POST to create country (CREATE)
+POST http://localhost:8000/countries/
+Content-Type: application/json
+
+{
+  "name": "Kirghistan",
+  "population": 6000000
+}
+
+### GET particular country (READ)
+GET http://localhost:8000/countries/Kazakhstan/
+
+### DELETE particular country (DELETE)
+DELETE http://localhost:8000/countries/Kirghistan/
+
+### UPDATE particular country (UPDATE)
+PUT http://localhost:8000/countries/Kazakhstan/
+Content-Type: application/json
+
+{
+  "name": "Kazakhstan",
+  "population": 19000002
+}
